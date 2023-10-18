@@ -1,0 +1,24 @@
+public static int marsExploration(String s) {
+    
+        int result = 0;
+
+        for (int i = 0; i < s.length()/3; i++){
+            
+            String sub = s.substring(i*3, (i*3)+3);
+            
+            if (sub.charAt(0) != 'S') {
+                result++;
+            }
+            
+            if (sub.charAt(1) != 'O') {
+                result++;
+            }
+            
+            if (sub.charAt(2) != 'S') {
+                result++;
+            }
+            
+        }
+        
+        return result;
+    }
